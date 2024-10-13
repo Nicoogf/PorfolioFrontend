@@ -91,7 +91,7 @@ function Home() {
 
 
             <h2 className='text-4xl font-semibold text-center xl:text-start'> Nicolas Falabella </h2>
-            <h1 className='text-2xl text-orange-500 text-center sm:text-green-600 md:text-pink-600 xl:text-start'>Frontend Developer</h1>
+            <h1 className='text-2xl  text-center text-pink-600 xl:text-start'>Frontend Developer</h1>
 
             <p className='text-gray-300 text-sm text-center w-[95%] mx-auto my-2 xl:text-start xl:w-full'> Creando soluciones frontend escalables con Reactjs y Nextjs</p>
 
@@ -125,7 +125,7 @@ function Home() {
                   </Link>
                 </li>
 
-                <li className='max-w-[280px] border-2 border-transparent bg-blue-900 hover:bg-blue-300 w-[100%] flex items-center justify-center text-center rounded-md group transition-all duration-300 overflow-hidden xl:hidden'>
+                <li className='max-w-[280px] border-2 border-transparent bg-blue-900 hover:bg-blue-300 w-[100%] flex items-center justify-center text-center rounded-xl group transition-all duration-300 overflow-hidden xl:hidden'>
                   <Link to="/code" className='text-center text-sm w-full  max-w-[300px] py-3 sm:py-4 font-semibold text-white group-hover:text-blue-800 flex flex-row items-center justify-center gap-x-3 relative'>
 
                     <span className='relative'>
