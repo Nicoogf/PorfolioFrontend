@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.code {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+}
+
+.explorer-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+main {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button-java {
+  background: rgb(251, 252, 254);
+  background: linear-gradient(190deg, rgba(251, 252, 254, 1) 6%, rgba(225, 234, 244, 1) 64%, rgba(199, 217, 235, 1) 100%);
+}
+
+/* Estilo general del scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Ancho de la barra de desplazamiento vertical */
+  height: 10px;
+  /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* Estilo de la parte de la barra que se puede desplazar */
+::-webkit-scrollbar-thumb {
+  background-color: #551948;
+  /* Color del thumb (parte de la barra que se arrastra) */
+}
+
+/* Estilo del área donde se encuentra la barra */
+::-webkit-scrollbar-track {
+  background-color: #030D22;
+  /* Fondo de la pista */
+}
+
+/* Hover sobre el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #EE0077;
+  /* Color del thumb cuando pasas el mouse sobre él */
+}
+
+.papper::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: #310072;
+  /* Opcional: Color de fondo de la selección */
+}
+
+.bg-violetgradient {
+  background: rgb(19, 7, 54);
+  background: linear-gradient(90deg, rgba(19, 7, 54, 1) 0%, rgba(36, 18, 70, 1) 37%, rgba(74, 19, 87, 1) 100%);
+}
+
+.button {
+  border-radius: 51px;
+  background: transparent ;
+  box-shadow: 13px 13px 26px #b3b3b3,
+    -13px -13px 26px #ffffff;
+}
+
+.button-2{
+  background: rgb(226,178,17);
+background: linear-gradient(90deg, rgba(226,178,17,1) 0%, rgba(255,167,0,1) 39%, rgba(201,155,0,1) 100%);
+}
+
+.windows{
+  color: rgb(60,169,210);
+  color: linear-gradient(75deg, rgba(60,169,210,1) 0%, rgba(0,121,195,1) 100%);
+}
+
+.bg-fondo{
+  background-image: url("./assets/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.standarport::-webkit-scrollbar {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  }
+
+  .loader {
+    border: 4px solid #f3f3f3; /* Color claro */
+    border-top: 4px solid #3498db; /* Color del spinner */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.bg-night{
+  background: rgb(0,0,0);
+background: linear-gradient(75deg, rgba(0,0,0,1) 13%, rgba(0,3,4,1) 15%, rgba(0,121,195,0) 100%);
+}
+
+.bg-light{
+  background: rgb(255,255,255);
+  background: linear-gradient(75deg, rgba(255,255,255,1) 0%, rgba(0,121,195,0) 65%);
+}
