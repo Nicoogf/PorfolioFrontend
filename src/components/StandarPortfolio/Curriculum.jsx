@@ -15,10 +15,10 @@ const Curriculum = () => {
            md:text-bases w-[60%] md:w-[70%] mx-auto `}> 
            { english ? "Below, I will provide the download button to obtain the updated resume in PDF format." :
            "A continuacion dejare el boton de descarga para obtener el curriculum actualizado en formato PDF"} </p>
-    <button className={` ${nightMode ? "border-violet-400/30 bg-violet-400/30" : "border-violet-400/30 bg-violet-900/60 hover:border-violet-950"}  mt-4 md:mt-3 mx-auto flex flex-row gap-x-2 items-center border  rounded-md  font-semibold px-3 py-1 hover:bg-white hover:border-white/30 transition-all duration-200  group `}> 
+    <a  href="/Curriculum.pdf" download="Curriculum.pdf" className={` ${nightMode ? "border-violet-400/30 bg-violet-400/30" : "border-violet-400/30 bg-violet-900/60 hover:border-violet-950"} max-w-[160px] mt-4 md:mt-3 mx-auto flex flex-row gap-x-2 items-center justify-center border  rounded-md  font-semibold px-3 py-1 hover:bg-white hover:border-white/30 transition-all duration-200  group `}> 
       <IoDownloadOutline className='text-violet-200 group-hover:text-violet-900' /> 
       <span className={` text-sm text-violet-200 group-hover:text-violet-900 `}> { english ? "Download" : "Descargar" } </span> 
-    </button>
+    </a>
   </section>
   )
 }

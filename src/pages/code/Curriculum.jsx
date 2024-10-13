@@ -9,6 +9,7 @@ import { BsFillCircleFill } from "react-icons/bs";
 import { IoMdDownload } from "react-icons/io";
 import { useConsole } from "../../Context/ConsoleContext"
 import { useLanguage } from "../../Context/LanguageProvider"
+import cv from "../../assets/cv.pdf"
 
 function CurriculumPage() {
   const { viewConsole } = useConsole();
@@ -18,9 +19,11 @@ function CurriculumPage() {
       <main className={` ${viewConsole ? "h-[calc(100%-350px)]" : "h-[100%]"}
        overflow-y-scroll pt-2 pb-12 font-normal relative`}>
   
-        <p className={` ${viewConsole ? "hidden" : "flex"} fixed right-8 bottom-8 bg-[#D72180] border border-[#A21C68] p-2 rounded-full z-50 w-10 h-10 flex items-center justify-center `}> 
+        <a href="/Curriculum.pdf" download="Curriculum.pdf"
+        className={` ${viewConsole ? "hidden" : "flex"} fixed right-8 bottom-8 bg-[#D72180] border border-[#A21C68] p-2 rounded-full z-50 w-10 h-10 flex items-center justify-center `}> 
          <IoMdDownload className="text-[#E1E2E9]"/>
-        </p>
+        </a>
+
         <div className='mx-auto bg-white flex flex-col p-3 lg:p-8 overflow-hidden max-w-[798px] overflow-y-scroll papper'>
         <header className='flex flex-row justify-between items-center  pb-4 w-full  max-w-[798px] mx-auto relative'>
           <section>
@@ -30,7 +33,7 @@ function CurriculumPage() {
           </section>
 
           <section className='hidden md:flex'>
-            <img src={ProfileImage} className='md:w-14 lg:w-20 rounded-full' alt="Profile imagen" />
+            <img src={ProfileImage} className='md:w-14 lg:w-20 rounded-full hidden' alt="Profile imagen" />
           </section>
           <div className='border-b border-black w-[95%] mx-auto absolute bottom-0'/>
         </header>

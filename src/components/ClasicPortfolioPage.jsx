@@ -22,6 +22,7 @@ import FormularioContacto from "./StandarPortfolio/FormularioContacto";
 import FormularioContactoMovil from "./StandarPortfolio/FormularioMobile";
 import { useNightMode } from "../Context/NightmodeContext";
 import { useLanguage } from "../Context/LanguageProvider";
+import { Link } from "react-router-dom";
 
 
 
@@ -57,21 +58,24 @@ function ClassicPortfolio() {
 
             <nav className="flex flex-row gap-x-2 absolute top-4 right-2">
 
-              <div className={` ${nightMode ? "bg-violet-200/20 hover:bg-white" : "bg-violet-300 text-[#624987] hover:bg-[#3B2C52]"}  rounded-full p-3 cursor-pointer group`}>
+              <Link to="https://discord.com/users/693586473894805535" target="_blank"
+                rel="noopener noreferrer" className={` ${nightMode ? "bg-violet-200/20 hover:bg-white" : "bg-violet-300 text-[#624987] hover:bg-[#3B2C52]"}  rounded-full p-3 cursor-pointer group`}>
                 <FaDiscord className={` ${nightMode ? "text-white group-hover:text-black" : "text-[#624987] group-hover:text-white"} `} />
-              </div>
+              </Link>
 
 
-
-
-
-              <div className={` ${nightMode ? "bg-violet-200/20 hover:bg-white" : "bg-violet-300 text-[#624987] hover:bg-[#3B2C52]"}  rounded-full p-3 cursor-pointer group`}>
+              <Link
+                to="https://github.com/Nicoogf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={` ${nightMode ? "bg-violet-200/20 hover:bg-white" : "bg-violet-300 text-[#624987] hover:bg-[#3B2C52]"}  rounded-full p-3 cursor-pointer group`}>
                 <FaGithub className={` ${nightMode ? "text-white group-hover:text-black" : "text-[#624987] group-hover:text-white"} `} />
-              </div>
+              </Link>
 
 
-               <div className={` ${nightMode ? "bg-violet-200/20 hover:bg-white" : "bg-violet-300 text-[#624987] hover:bg-[#3B2C52]"}  rounded-full p-3 cursor-pointer group`} onClick={toggleMenuMobile}>
-                <IoExitOutline className={` ${nightMode ? "text-white group-hover:text-black" : "text-[#624987] group-hover:text-white"} `}  />
+              <div
+                className={` ${nightMode ? "bg-violet-200/20 hover:bg-white" : "bg-violet-300 text-[#624987] hover:bg-[#3B2C52]"}  rounded-full p-3 cursor-pointer group`} onClick={toggleMenuMobile}>
+                <IoExitOutline className={` ${nightMode ? "text-white group-hover:text-black" : "text-[#624987] group-hover:text-white"} `} />
               </div>
             </nav>
 
@@ -89,15 +93,29 @@ function ClassicPortfolio() {
             </section>
 
             <section className="flex flex-row items-center gap-x-3 mt-2">
-              <article className="bg-violet-200/20 px-2 py-1 text-xs rounded-sm font-semibold">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="https://wa.me/5492324584106" 
+                className="bg-violet-200/20 px-2 py-1 text-xs rounded-sm font-semibold">
                 Whatsapp
-              </article>
-              <article className="bg-violet-200/20 px-2 py-1 text-xs rounded-sm font-semibold">
+              </Link>
+              <a
+                href="mailto:nicolasgfalabella@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-violet-200/20 px-2 py-1 text-xs rounded-sm font-semibold"
+              >
                 Email
-              </article>
-              <article className="bg-violet-200/20 px-2 py-1 text-xs rounded-sm font-semibold">
+              </a>
+
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="https://www.instagram.com/nfalabella_/"
+                className="bg-violet-200/20 px-2 py-1 text-xs rounded-sm font-semibold">
                 Instagram
-              </article>
+              </Link>
             </section>
           </header>
 
@@ -141,19 +159,23 @@ function ClassicPortfolio() {
 
               <nav className="flex flex-row gap-x-2 absolute top-4 right-2 z-[999]">
 
-                <div className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"} text-violet-300 bg-violet-400/30 hover:bg-white rounded-full p-3 group cursor-pointer transition-all duration-200`}>
+                <Link to="https://discord.com/users/693586473894805535" target="_blank"
+                  rel="noopener noreferrer" className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"} text-violet-300 bg-violet-400/30 hover:bg-white rounded-full p-3 group cursor-pointer transition-all duration-200`}>
                   <FaDiscord className="group-hover:text-violet-800" />
-                </div>
+                </Link>
 
-                <div className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"} text-violet-300 bg-violet-400/30 hover:bg-white rounded-full p-3 group cursor-pointer transition-all duration-200`}>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  to="https://github.com/Nicoogf" className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"} text-violet-300 bg-violet-400/30 hover:bg-white rounded-full p-3 group cursor-pointer transition-all duration-200`}>
                   <FaGithub className="group-hover:text-violet-800" />
-                </div>
+                </Link>
 
               </nav>
 
               <div className="relative w-[35%] p-2">
                 <img src={profileImage} className="w-24 rounded-full border-4 border-violet-200/20" />
-                <div className="bg-lime-500 rounded-full w-4 h-4 absolute bottom-2 right-4 xl:right-8 animate-pulse" />
+                <div className="bg-lime-500 rounded-full w-4 h-4 absolute bottom-2 left-16 xl:right-8 animate-pulse" />
               </div>
 
               <section>
@@ -168,7 +190,7 @@ function ClassicPortfolio() {
                 <a className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"}  px-2 py-1 text-xs rounded-md  xl:px-4 xl:py-1 hover:bg-white hover:text-violet-900  transition-all duration-200`} href="https://wa.me/5492324584106 " target="_blank" rel="noopener noreferrer">
                   Whatsapp
                 </a>
-                <a className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"}  bg-violet-400/30 px-2 py-1 text-xs rounded-md xl:py-1 xl:px-4 hover:bg-white hover:text-violet-900 transition-all duration-200 `} href="mailto:tuemail@ejemplo.com" target="_blank" rel="noopener noreferrer">
+                <a className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"}  bg-violet-400/30 px-2 py-1 text-xs rounded-md xl:py-1 xl:px-4 hover:bg-white hover:text-violet-900 transition-all duration-200 `}  href="mailto:nicolasgfalabella@gmail.com" target="_blank" rel="noopener noreferrer">
                   Email
                 </a>
                 <a className={` ${nightMode ? "bg-violet-400/30" : "bg-violet-900/60"}  bg-violet-400/30 px-2 py-1 text-xs rounded-md xl:py-1 xl:px-4 hover:bg-white hover:text-violet-900 transition-all duration-200 `} href="https://www.instagram.com/nfalabella_/" target="_blank" rel="noopener noreferrer">
