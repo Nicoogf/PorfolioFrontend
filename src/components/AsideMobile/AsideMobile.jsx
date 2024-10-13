@@ -1,6 +1,5 @@
 import React from 'react'
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { IoIosMore } from "react-icons/io";
 import { FaFolder } from "react-icons/fa";
 import { RiNodejsLine } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
@@ -10,7 +9,6 @@ import logoJava from "../../assets/java.svg"
 import logoHtml from "../../assets/html.svg"
 import logoPDF from "../../assets/pdf.svg"
 import logoCss from "../../assets/css.svg"
-import logoJpg from "../../assets/jpg.svg"
 import logoTs from "../../assets/ts.svg"
 import logoJs from "../../assets/js.svg"
 import { useMenu } from '../../Context/HeaderContext';
@@ -24,7 +22,6 @@ const AsideMobile = () => {
     { fileName: "Curriculum.pdf", iconUrl: logoPDF, link: "/code/curriculum" },
     { fileName: "Experience.html", iconUrl: logoHtml, link: "/code/experience" },
     { fileName: "Networks.css", iconUrl: logoCss, link: "/code/network" },
-    { fileName: "ProfileImage.jpg", iconUrl: logoJpg, link: "/code/profile" },
     { fileName: "Projects.ts", iconUrl: logoTs, link: "/code/projects" },
     { fileName: "Technologies.js", iconUrl: logoJs, link: "/code/technologies" }
 ]

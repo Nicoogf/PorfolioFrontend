@@ -21,7 +21,7 @@ import FooterComponent from './Footer/FooterComponent';
 import EyelashOpenComponent from './EyelashOpen/EyelashOpenComponent';
 import AsideMobile from './AsideMobile/AsideMobile';
 import { FaFolderOpen } from "react-icons/fa6";
-import ProfileImagePage from '../pages/code/ProfileImage';
+
 
 
 function VSCLayout() {
@@ -70,7 +70,6 @@ function VSCLayout() {
             <Route path="network" element={<NetworkPage />} />
             <Route path="projects" element={<ProjectPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
-            <Route path="profile" element={<ProfileImagePage />} />
           </Routes>
 
           <TerminalComponent />
